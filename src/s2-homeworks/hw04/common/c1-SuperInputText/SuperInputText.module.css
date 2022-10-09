@@ -1,20 +1,58 @@
 .input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(158, 158, 158, 0.25);
 }
 
 .input {
+    display: block;
+    width: 372px;
+    height: 36px;
+    padding: 0.375rem 0.75rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
+
 }
 
 .errorInput {
+    display: block;
+    width: 372px;
+    height: 36px;
+    padding: 0.375rem 0.75rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #CC1439;
+    border-radius: 5px;
 }
 
 .errorInput:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 1px red;
 }
 
 .error {
+    margin-bottom: 5px;
+    width: 25px;
+    height: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #CC1439;
 }
