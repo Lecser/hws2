@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent } from "react";
+import React from "react";
 import s from "./Greeting.module.css";
 
 type GreetingPropsType = {
@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     lastUserName,
   } // деструктуризация пропсов
 ) => {
-  const inputClass = s.errorInput; // need to fix with (?:)
+  const inputClass = error === "Ошибка! Введите имя!" ? s.errorInput : s.input; // need to fix with (?:)
 
   return (
     <div id={"hw3-form"} className={s.greetingForm}>
@@ -40,9 +40,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             id={"hw3-input"}
             value={name}
             onChange={setNameCallback}
-            className={
-              error === "Ошибка! Введите имя!" ? s.errorInput : s.input
-            }
+            className={inputClass}
             onKeyDown={onEnter}
             onBlur={onBlur}
           />
