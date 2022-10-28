@@ -2,6 +2,8 @@
     display: flex;
     gap: 24px;
     margin-bottom: 32px;
+margin-left: 70px;
+    margin-top:32px ;
 
 }
 
@@ -53,4 +55,6 @@
     gap: 17px;
     flex-wrap: wrap;
     max-width: 450px;
+    margin-bottom:73px ;
+    margin-left: 70px;
 }

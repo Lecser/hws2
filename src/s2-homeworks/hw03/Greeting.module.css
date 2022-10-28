@@ -1,6 +1,9 @@
 .greetingForm {
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
+    margin-top: 31px;
+    margin-bottom: 204px;
 }
 
 .inputAndButtonContainer {
@@ -83,4 +86,5 @@ display: flex;
 
 .greeting {
 margin-top: 2px;
+
 }
