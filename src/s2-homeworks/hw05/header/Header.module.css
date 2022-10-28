@@ -1,8 +1,20 @@
 .burgerMenuIcon {
+    padding-top: 15px;
+    padding-left: 70px;
 }
 
 .header {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 40px rgba(29, 33, 38, 0.13), 0 0 2px rgba(29, 33, 38, 0.1);
 }
 
 .header h1 {
+    position: fixed;
+    left: 1600px;
+    top: 9px;
+    font-size: 24px;
 }
