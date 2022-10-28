@@ -6,7 +6,7 @@
 .span {
     color: #0080FF;
     margin-left: 10px;
-    position: fixed;
+    position: absolute;
 }
 
 .input {
