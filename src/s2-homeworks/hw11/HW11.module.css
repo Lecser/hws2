@@ -1,8 +1,25 @@
 .container {
+    color: #000;
 }
 
 .wrapper {
+    display: flex;
 }
 
-.number {
+.wrapper:nth-child(1) span:nth-child(2) {
+    width: 310px;
+}
+
+.wrapper:nth-child(2) span:nth-child(2) {
+    width: 310px;
+}
+
+.number:first-child {
+    align-self: center;
+    margin-right: 30px;
+}
+
+.number:last-child {
+    align-self: center;
+    margin-left: 20px;
 }
