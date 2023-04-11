@@ -32,13 +32,15 @@ const HW14 = () => {
 
   const sendQuery = (value: string) => {
     setLoading(true);
-    getTechs(value).then((res) => {
-      setLoading(false);
-      console.log(res);
-      if (res?.data) {
-        setTechs(res?.data?.techs);
-      }
-    });
+    getTechs(value)
+      .then((res) => {
+        if (res?.data) {
+          setTechs(res?.data?.techs);
+        }
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const onChangeText = (value: string) => {
